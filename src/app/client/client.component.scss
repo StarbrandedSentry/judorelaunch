@@ -29,7 +29,10 @@ section {
 
     &:hover {
         content: 'lorem';
-        flex-grow: 2;
+        flex-grow: 3;
+
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
         
         .description::after {
             content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
@@ -38,11 +41,13 @@ section {
     }
 
     &.full {
-        background: no-repeat center/100% url("../../assets/images/full-build.jpg");
+        background-image: url("../../assets/images/full-build.jpg");
+        background-size: cover;
     }
 
     &.single {
-        background: no-repeat center/100% url("../../assets/images/single.jpg");
+        background-image: url("../../assets/images/single.jpg");
+        background-size: cover;
     }
 
     .details {
@@ -56,16 +61,6 @@ section {
     
         .description {
             align-self: flex-end;
-
-            &:before {
-                //content: 'View more';
-                text-decoration: underline;
-            }
-
-            &:hover::before {
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
-                text-decoration: none;
-            }
         }
     }   
 
