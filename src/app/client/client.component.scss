@@ -24,10 +24,15 @@ section {
     display: flex;    
     align-items: flex-end;    
     transition: 0.5s all ease-in-out;
-    color: var(--secondary);
+    color: var(--secondary);  
+    cursor: pointer;
 
     &:hover {
-        content: 'lorem'
+        
+        .description::after {
+            content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
+            text-decoration: none;
+        }
     }
 
     &.full {
@@ -39,8 +44,7 @@ section {
     }
 
     .details {
-        padding: 0 1em;        
-        cursor: pointer;
+        padding: 0 1em;      
 
         .title {
             font-weight: bold;
@@ -50,16 +54,6 @@ section {
     
         .description {
             align-self: flex-end;
-
-            &:before {
-                content: 'View more';
-                text-decoration: underline;
-            }
-
-            &:hover::after {
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
-                text-decoration: none;
-            }
         }
     }   
 
