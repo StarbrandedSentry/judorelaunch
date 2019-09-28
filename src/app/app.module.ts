@@ -16,6 +16,8 @@ import { TransactionsComponent } from './client/single/transactions/transactions
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { PendingComponent } from './client/single/transactions/pending/pending.component';
+import { CompleteComponent } from './client/single/transactions/complete/complete.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     SingleNavComponent,
     ClientNavComponent,
     OrderItemComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    PendingComponent,
+    CompleteComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,

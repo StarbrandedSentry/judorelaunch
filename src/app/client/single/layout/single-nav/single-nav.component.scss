@@ -17,7 +17,7 @@ h1{
 
 .nav-buttons{
     margin-left: auto;
-    display: none;
+    display: flex;
     margin-right: 1em;
 
     a{
@@ -63,13 +63,13 @@ h1{
 }
 
 .menu {
-    display: flex;
+    display: none;
     cursor: pointer;
     padding: 0.3em;
     background-color: #f7eded69;
 }
 
-@media screen and (max-width: 10000px){
+@media screen and (max-width: 620px){
     nav{
         justify-content: flex-start;
         box-shadow: 0 0 0 -6px black;

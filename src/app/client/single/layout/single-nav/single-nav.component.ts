@@ -32,7 +32,7 @@ import {
 export class SingleNavComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
     onResize(event) {
-    if(window.innerWidth <= 10000){
+    if(window.innerWidth <= 620){
       this.isOpen = false;
     }
     else{
@@ -40,7 +40,7 @@ export class SingleNavComponent implements OnInit {
     }
   }
 
-  isOpen = false;
+  isOpen = true;
 
   constructor() { }
 

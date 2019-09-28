@@ -23,7 +23,9 @@ section {
     margin: 5em;
     display: flex;    
     align-items: flex-end;    
-    transition: 0.5s all ease-in-out;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-property: flex-grow, filter, -webkit-filter;
     color: var(--secondary);  
     cursor: pointer;
     flex-basis: 40vw;
