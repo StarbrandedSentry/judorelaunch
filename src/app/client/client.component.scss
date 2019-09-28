@@ -19,7 +19,7 @@
 
 section { 
     height: 50vh;
-    width: 40vw;
+    width: fit-content;
     margin: 5em;
     display: flex;    
     align-items: flex-end;    
@@ -28,11 +28,13 @@ section {
     transition-property: flex-grow, filter, -webkit-filter;
     color: var(--secondary);  
     cursor: pointer;
+    flex-basis: 40vw;
 
     &:hover {
         content: 'lorem';
-        flex-grow: 2;
-        box-shadow: 0 2px 6px 2px #525252;     
+        flex-grow: 5;
+        box-shadow: 0 2px 6px 2px #525252;       
+        
 
         -webkit-filter: blur(4px);
         filter: blur(4px);
@@ -45,14 +47,16 @@ section {
 
     &.full {
         background: no-repeat center/100% url("../../assets/images/full-build.jpg");
+        background-size: cover;
     }
 
     &.single {
         background: no-repeat center/100% url("../../assets/images/single.jpg");
+        background-size: cover;
     }
 
     .details {
-        padding: 0 1em;      
+        padding: 0 1em;
 
         .title {
             font-weight: bold;
@@ -62,6 +66,12 @@ section {
     
         .description {
             align-self: flex-end;
+
+            &:before {
+                //content: 'View more';
+                text-decoration: underline;
+            }
+
         }
     }   
 
@@ -71,15 +81,17 @@ section {
     display: flex;
 }
 
-@media (max-width: 720px){
+@media (max-width: 1020px){
     .nav{
         flex-direction: column;
         height: fit-content;
+        margin-bottom: 1em;
     }
     
     section { 
         margin: 0;
         width: 90vw;
+        margin-bottom: 1em;
     }
 
     .body{
