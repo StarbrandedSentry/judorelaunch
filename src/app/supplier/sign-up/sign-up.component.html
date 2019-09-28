@@ -5,9 +5,28 @@
 <div class="body">
     <div class="container">
         <span class="title">Name:</span>
-        <input type="text" placeholder="Enter Company Name" [(ngModel)]="supplier.name"> 
+        <input type="text" placeholder="Enter company name" [(ngModel)]="supplier.name"> 
         
+        <span class="title">Address:</span>
+        <input type="text" placeholder="Enter address" [(ngModel)]="supplier.address"> 
+
         <span class="title">Email:</span>
-        <input type="text" placeholder="Enter Item" [(ngModel)]="supplier.email"> 
+        <input type="text" placeholder="Enter email" [(ngModel)]="supplier.email"> 
+
+        <span class="title">Contact Number:</span>
+        <input type="text" placeholder="Enter contact number" [(ngModel)]="supplier.contact_number"> 
+
+        <button class="solid" (click)="addSupplier()">Sign Up</button>
+
+        <div class="success" *ngIf="supplier_added">
+            <i class="material-icons">
+                check
+            </i>
+            Supplier was added to database!
+
+            <i class="material-icons" id=close (click)="close()">
+                close
+            </i>
+        </div>
     </div>
 </div>
