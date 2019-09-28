@@ -15,15 +15,18 @@ import { SupplierComponent } from './supplier/supplier.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
-  { path: 'client', component: ClientComponent },
-  { path: 'single-build', component: SingleComponent},
-  { path: 'full-build', component: FullBuildComponent},
-  { path: 'order-item', component: OrderItemComponent},
-  { path: 'transactions', component: TransactionsComponent, children: [  
-    { path: '', redirectTo: 'transactions-pending', pathMatch: 'full'},
-    { path: 'transactions-complete', component:CompleteComponent},
-    { path: 'transactions-pending', component:PendingComponent}
+  { path: 'client', component: ClientComponent},
+  { path: 'single-build', component: SingleComponent, children: [
+    { path: '', redirectTo: 'transactions', pathMatch: 'full'},
+    { path: 'order-item', component: OrderItemComponent},
+    { path: 'transactions', component: TransactionsComponent, children: [  
+      { path: '', redirectTo: 'transactions-pending', pathMatch: 'full'},
+      { path: 'transactions-complete', component:CompleteComponent},
+      { path: 'transactions-pending', component:PendingComponent}
+    ]},
   ]},
+  { path: 'full-build', component: FullBuildComponent},
+  
   
   { path: 'fb-order', component:FbOrderComponent},
   { path: 'bidding', component:BiddingComponent},
