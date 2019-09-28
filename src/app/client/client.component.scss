@@ -18,22 +18,24 @@
 }
 
 section { 
-    height: 50vh;
+    height: 100%;
     width: 40vw;
     margin: 5em;
     display: flex;    
     align-items: flex-end;    
     transition-duration: 500ms;
+    //justify-content: space-evenly;
     transition-timing-function: ease-in-out;
-    transition-property: flex-grow, filter, -webkit-filter, transform;
+    transition-property: flex-grow;
     color: var(--secondary);  
     cursor: pointer;
     
 
     &:hover {
         content: 'lorem';
-        flex-grow: 5;
-        transform: rotate(20);
+        flex-grow: 3;
+        //width: 41vw;
+        //height: 51vh;
         box-shadow: 0 2px 6px 2px #525252;     
         //-webkit-filter: blur(4px);
         //filter: blur(4px);
@@ -99,6 +101,7 @@ section {
 .body{
     display: flex;
     justify-content: center;
+    width: 100vw;
 }
 
 @media (max-width: 720px){
