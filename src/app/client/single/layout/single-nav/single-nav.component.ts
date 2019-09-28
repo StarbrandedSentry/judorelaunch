@@ -32,23 +32,22 @@ import {
 export class SingleNavComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
     onResize(event) {
-    if(window.innerWidth <= 620){
+    if(window.innerWidth <= 10000){
       this.isOpen = false;
     }
     else{
       this.isOpen = true;
     }
   }
-
   isOpen = false;
 
   constructor() { }
 
   ngOnInit() {
-    console.log('test1');
-    console.log('test2');
-    console.log('test3');
-    console.log('test4');
+    console.log('bobo si serdon');
+    console.log('joke lang masakit likod ni serdon');
+    console.log('city boy si dean');
+    console.log('tatarrsadas');
   }
 
   toggle(){
