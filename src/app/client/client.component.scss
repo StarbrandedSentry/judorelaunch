@@ -1,31 +1,15 @@
-section {
+div {
     display: flex;
     flex-direction: column;
+    background-color: var(--primary);
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    color: var(--secondary);
+    flex-wrap: wrap;
 
-    div {
-        padding: 2em;
-        height: 40vh;
-        flex-grow: 1;         
-        display: flex;        
-        justify-content: center;
-        align-items: center;  
+    .big {
+        font-size: 1.5em;
     }
-
-    div:nth-child(odd) {
-        background-color: var(--primary);
-
-        button {
-            
-        }
-             
-    }
-
-    div:nth-child(even) {
-        background-color: var(--secondary);
-    }
-
-    div button {
-
-    }
-
 }
