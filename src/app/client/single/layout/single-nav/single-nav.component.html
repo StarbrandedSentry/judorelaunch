@@ -13,18 +13,23 @@
                 close
             </i>
         </span> 
+        <div class="logo">
+            <a [routerLink]="['/client']" routerLinkActivate="active" tooltip="Home" placement="right">
+                <img src="../../../../../assets/icons/icon-72x72.png" height="50px" width="50px" />
 
-        <a [routerLink]="['/single-build/transactions']" routerLinkActive="active">
+            </a>
+        </div>
+        <a [routerLink]="['/single-build/transactions']" routerLinkActive="active" tooltip="Transactions" placement="right">
             <i class="material-icons">
                 chrome_reader_mode
             </i>
         </a>
-        <a [routerLink]="['/single-build/order-item']" routerLinkActive="active">
+        <a [routerLink]="['/single-build/order-item']" routerLinkActive="active" tooltip="Purchase Order" placement="right">
             <i class="material-icons">
                 view_headline
             </i>
         </a>
-        <a [routerLink]="['/single-build/suppliers']" routerLinkActive="active">
+        <a [routerLink]="['/single-build/suppliers']" routerLinkActive="active" tooltip="Suppliers" placement="right">
             <i class="material-icons">
                 supervisor_account
             </i>
