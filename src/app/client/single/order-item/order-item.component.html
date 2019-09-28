@@ -1,12 +1,14 @@
 <app-client-nav></app-client-nav>
 <app-single-nav></app-single-nav>
-<div class="main">
-    <span class="title">Item:</span>
-    <input type="text" placeholder="Enter Name:" [(ngModel)]="order.name"> 
-    <span class="title">Description:</span>
-    <input type="text" placeholder="Enter Description" [(ngModel)]="order.description"> 
-    <span class="title">Quantity:</span>
-    <input type="text" placeholder="Enter Name:" [(ngModel)]="order.quantity"> 
-   
-    <button class="solid" (click)="placeOrder()">ADD</button>
-</div>  
+<div class="container">
+    <div class="main">
+        <span class="title">Item:</span>
+        <input type="text" placeholder="Enter Item" [(ngModel)]="order.name"> 
+        <span class="title">Description:</span>
+        <input type="text" placeholder="Enter Description" [(ngModel)]="order.description"> 
+        <span class="title">Quantity:</span>
+        <input type="text" placeholder="Enter Quantity" [(ngModel)]="order.quantity"> 
+
+        <button class="solid" (click)="placeOrder()">ADD</button>
+    </div>  
+</div>

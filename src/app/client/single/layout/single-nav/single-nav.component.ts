@@ -45,10 +45,7 @@ export class SingleNavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('bobo si serdon');
-    console.log('joke lang masakit likod ni serdon');
-    console.log('city boy si dean');
-    console.log('tatarrsadas');
+ 
   }
 
   toggle(){
