@@ -24,7 +24,7 @@ const routes: Routes = [
     { path: 'transactions', component: TransactionsComponent, children: [
       { path: '', redirectTo: 'transactions-pending', pathMatch: 'full'},
       { path: 'transactions-pending', component: PendingComponent},
-      { path: 'transactions-complete', component: PendingComponent}
+      { path: 'transactions-complete', component: CompleteComponent}
     ]}
   ]},
   { path: 'full-build', component: FullBuildComponent},
