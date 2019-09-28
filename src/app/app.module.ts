@@ -6,13 +6,11 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ClientComponent } from './client/client.component';
-import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClientComponent,
-    LandingComponent
+    ClientComponent
   ],
   imports: [
     BrowserModule,

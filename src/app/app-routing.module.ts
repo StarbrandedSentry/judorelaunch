@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ClientComponent } from './client/client.component';
-import { LandingComponent } from './landing/landing.component';
-
 
 const routes: Routes = [
-  { path: '', redirectTo: 'get-started', pathMatch: 'full'},
-  { path: 'get-started', component: LandingComponent},
+  { path: '', redirectTo: 'client', pathMatch: 'full'},
   { path: 'client', component: ClientComponent }
 ];
 
