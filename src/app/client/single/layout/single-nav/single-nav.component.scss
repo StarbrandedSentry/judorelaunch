@@ -75,12 +75,14 @@ h1{
         justify-content: flex-start;
     }
 
-    .close {
+    .close i {
         cursor: pointer;
-        background-color: transparent;
-        border: none;
-        right: 0;
-        padding: 1em
+        margin-left: 9.5em;
+        padding: 0.3em;
+
+        &:hover {
+            color: var(--secondary);
+        }
     }
 
     .nav-buttons{

@@ -5,18 +5,18 @@
         </i>
     </button>
     <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
-        <button class="close">
+        <span class="close" (click)="close()">
             <i class="material-icons">
                 close
             </i>
-        </button>
-        <a [routerLink]="[ '/order-item' ]" routerLinkActive="active">
+        </span>
+        <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
             <i class="material-icons">
                 chrome_reader_mode
             </i>
             Transactions
         </a>
-        <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
+        <a [routerLink]="[ '/order-item' ]" routerLinkActive="active">
             <i class="material-icons">
                 view_headline
             </i>

@@ -39,7 +39,7 @@ export class SingleNavComponent implements OnInit {
       this.isOpen = true;
     }
   }
-  
+
   isOpen = false;
 
   constructor() { }
@@ -52,6 +52,10 @@ export class SingleNavComponent implements OnInit {
   }
 
   toggle(){
+    this.isOpen = !this.isOpen;
+  }
+
+  close(){
     this.isOpen = !this.isOpen;
   }
 
