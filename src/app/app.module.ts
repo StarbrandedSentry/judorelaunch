@@ -19,6 +19,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { PendingComponent } from './client/single/transactions/pending/pending.component';
 import { CompleteComponent } from './client/single/transactions/complete/complete.component';
 import { BiddingComponent } from './client/full-build/bidding/bidding.component';
+import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BiddingComponent } from './client/full-build/bidding/bidding.component'
     TransactionsComponent,
     PendingComponent,
     CompleteComponent,
-    BiddingComponent
+    BiddingComponent,
+    FbOrderComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
