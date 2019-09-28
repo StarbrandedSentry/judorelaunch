@@ -11,6 +11,8 @@ import { FullBuildComponent } from './client/full-build/full-build.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { SingleNavComponent } from './client/single/layout/single-nav/single-nav.component';
 import { ClientNavComponent } from './client/client-nav/client-nav.component';
+import { OrderItemComponent } from './client/single/order-item/order-item.component';
+import { TransactionsComponent } from './client/single/transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ClientNavComponent } from './client/client-nav/client-nav.component';
     FullBuildComponent,
     SupplierComponent,
     SingleNavComponent,
-    ClientNavComponent
+    ClientNavComponent,
+    OrderItemComponent,
+    TransactionsComponent
   ],
   imports: [
     BrowserModule,
