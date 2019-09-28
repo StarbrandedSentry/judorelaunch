@@ -27,7 +27,8 @@ section {
     color: var(--secondary);
 
     &:hover {
-        content: 'lorem'
+        content: 'lorem';
+        flex-grow: 2;
     }
 
     &.full {
@@ -56,7 +57,7 @@ section {
                 text-decoration: underline;
             }
 
-            &:hover::after {
+            &:hover::before {
                 content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
                 text-decoration: none;
             }
