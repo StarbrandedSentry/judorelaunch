@@ -9,16 +9,19 @@
 
 .main {
   margin-top: 1em;
-  margin-left: 23%;
+  margin-left: auto;
   margin-right: auto;
   font-size: 28px;
   padding: 20px;
   border-radius: 8px;
-  width: 50%;
+  width: 80%;
+  height: 70%;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 8px 1px #454545;
   
 }
+
+
 
 .topnav {
     overflow: hidden;
@@ -33,7 +36,7 @@
   .topnav a {
     float: left;
     color: var(--primary);
-    width:50vw;
+    width:100%;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
