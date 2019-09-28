@@ -20,7 +20,7 @@ import { PendingComponent } from './client/single/transactions/pending/pending.c
 import { CompleteComponent } from './client/single/transactions/complete/complete.component';
 import { BiddingComponent } from './client/full-build/bidding/bidding.component';
 import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +39,7 @@ import { FbOrderComponent } from './client/full-build/fb-order/fb-order.componen
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
-    AppRoutingModule,
+    AppRoutingModule,HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
