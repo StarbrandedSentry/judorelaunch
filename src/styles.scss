@@ -22,3 +22,24 @@ i{
         cursor: default;
     }
 }
+
+.title{
+    color: var(--primary);
+    cursor: default;
+    font-size: 1.5em;
+}
+
+input[type="text"]{
+    font-size: 1em;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid var(--primary);
+    width: 100%;
+    margin-bottom: 1.25em;
+    padding: 0;
+    outline: none;
+
+    &:focus{
+        border-bottom-color: var(--primary-dark)
+    }
+}
