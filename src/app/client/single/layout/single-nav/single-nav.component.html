@@ -1,15 +1,15 @@
-<nav>
+<!-- <nav>
     <button class="menu">
         <i class="material-icons" (click)="toggle()">
                 view_headline
         </i>
     </button>
     <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
-        <!-- <span class="close" (click)="close()">
+        <span class="close" (click)="close()">
             <i class="material-icons">
                 close
             </i>
-        </span> -->
+        </span> 
         <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
             <i class="material-icons">
                 chrome_reader_mode
@@ -23,4 +23,29 @@
             Order Item
         </a>
     </div>
-</nav>
+</nav> -->
+
+<div class="sidenav">
+    <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
+        <!-- <span class="close" (click)="close()">
+            <i class="material-icons">
+                close
+            </i>
+        </span>  -->
+        <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
+            <i class="material-icons">
+                chrome_reader_mode
+            </i>
+            Transactions
+        </a>
+        <a [routerLink]="[ '/order-item' ]" routerLinkActive="active">
+            <i class="material-icons">
+                view_headline
+            </i>
+            Order Item
+        </a>
+    </div>
+</div>
+<div class="main">
+    
+</div>
