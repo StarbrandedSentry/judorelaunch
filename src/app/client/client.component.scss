@@ -24,6 +24,7 @@
                 color: var(--primary);
                 text-shadow: 1px 6px 5px rgba(0,0,0,0.7);
                 letter-spacing: 0.1em;
+                cursor: pointer;
             }
 
             &.subtite
@@ -32,6 +33,7 @@
                 font-size: 2em;
                 color: var(--secondary);
                 text-shadow: 1px 6px 5px rgba(0,0,0,0.7);
+                cursor: pointer;
 
                 &:hover {
                     color: var(--primary);
