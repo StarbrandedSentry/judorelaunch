@@ -23,6 +23,7 @@ import { FbOrderComponent } from './client/full-build/fb-order/fb-order.componen
 import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
 
+import {HttpClient,HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { SuppliersComponent } from './client/single/suppliers/suppliers.componen
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
-    AppRoutingModule,
+    AppRoutingModule,HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
