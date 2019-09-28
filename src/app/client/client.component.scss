@@ -6,7 +6,6 @@
     justify-content: flex-start;
     align-items: center;
     color: var(--secondary);
-    flex-wrap: wrap;
 
     p{
         font-size: 1.5em;
@@ -44,6 +43,25 @@ section {
 
         &:hover {
             
+        }
+    }
+}
+
+@media (max-width: 720px){
+    .nav{
+        flex-direction: column;
+        height: fit-content;
+    }
+    
+    section { 
+        margin: 0;
+        width: 90vw;
+    
+        div {
+    
+            &:hover {
+                
+            }
         }
     }
 }
