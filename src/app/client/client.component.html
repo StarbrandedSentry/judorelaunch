@@ -4,8 +4,7 @@
 </div>
 
 <div class="body">
-    <a [routerLink]="[ '/full-build' ]" routerLinkActive="active">
-    <section class="full">
+    <section class="full" [routerLink]="[ '/full-build' ]" routerLinkActive="active">
             <div class="title">
                 FULL BUILD
      
@@ -13,20 +12,16 @@
             <p>
                 
             </p>
-        </section>
-    </a>
+    </section>
     
-    <a [routerLink]="[ '/single-build' ]" routerLinkActive="active">
-  
-        <section class="single">
-            <div class="title">
-                SINGLE BUILD
-            </div>
-            <p>
-        
-            </p>
-        </section>
-    </a>
+    <section class="single" [routerLink]="[ '/single-build' ]" routerLinkActive="active">
+        <div class="title">
+            SINGLE BUILD
+        </div>
+        <p>
+    
+        </p>
+    </section>
 </div>
 
 
