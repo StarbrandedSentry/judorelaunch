@@ -1,15 +1,18 @@
-div {
+.nav{
     display: flex;
     flex-direction: column;
     background-color: var(--primary);
     height: 20vh;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    align-content: space-between;
     color: var(--secondary);
     flex-wrap: wrap;
 
-    .big {
+    p{
         font-size: 1.5em;
+        &.big {
+            font-size: 2em;
+            font-weight: 600;
+        }
     }
 }
