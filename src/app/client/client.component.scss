@@ -1,11 +1,12 @@
 .nav{
     display: flex;
-    flex-direction: column;
-    background-color: var(--primary);
-    height: 20vh;
-    justify-content: flex-start;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary);
+    height: 10vh;
     color: var(--secondary);
+
 
     p{
         font-size: 1.5em;
@@ -41,9 +42,6 @@ section {
         padding: 1em;
         flex-grow: 1;
 
-        &:hover {
-            
-        }
     }
 }
 

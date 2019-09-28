@@ -7,8 +7,8 @@ import { FullBuildComponent } from './client/full-build/full-build.component';
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
   { path: 'client', component: ClientComponent },
-  { path: 'single', component: SingleComponent },
-  { path: 'full-build', component: FullBuildComponent }
+  { path: 'single-build', component: SingleComponent},
+  { path: 'full-build', component: FullBuildComponent}
   
 ];
 
