@@ -15,3 +15,9 @@
 body{
     margin: 0;
 }
+
+i{
+    &.material-icons{
+        cursor: default;
+    }
+}
