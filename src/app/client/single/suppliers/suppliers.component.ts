@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SuppliersService } from '../shared/suppliers.service';
 
 @Component({
   selector: 'app-suppliers',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuppliersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private suppService: SuppliersService) { }
 
   ngOnInit() {
+    this.suppService.getSuppliers().subscribe( suppliers => {
+      this.suppService.recoveredSuppliers = suppliers;
+    });
   }
 
 }

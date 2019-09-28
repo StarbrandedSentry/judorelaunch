@@ -4,5 +4,6 @@ export interface Supplier{
     email?: string,
     contact_number?: string,
     rating?: number,
-    address?: string
+    address?: string,
+    items?: string[]
 }

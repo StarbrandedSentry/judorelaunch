@@ -23,4 +23,8 @@ export class SuppliersService {
       return data;
     })));
   }
+
+  getSuppliers(){
+    return this.suppliers;
+  }
 }
