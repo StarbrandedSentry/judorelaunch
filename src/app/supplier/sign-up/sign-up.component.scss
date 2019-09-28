@@ -1,0 +1,51 @@
+header{
+    background: no-repeat center/100% url("../../../assets/images/signup.jpg");
+    height: 25vh;
+    //background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span{
+        font-size: 7vh;
+        font-weight: 700;
+        color: var(--primary);
+        margin-left: 3em;
+        cursor: default;
+    }
+}
+
+.body{
+    width: 100vw;
+    height: 75vh;
+    background-color: var(--primary);
+
+    display: flex;
+    justify-content: center;
+
+    .container{
+        margin-top: 1em;
+        width: 60vw;
+        height: 65vh;
+        padding: 1em;
+        border-radius: 4px;
+        background-color: var(--secondary);
+    }
+}
+
+@media screen and (max-width: 720px){
+    header{
+        justify-content: flex-end;
+        span{
+            margin-right: 0.5em;
+        }
+    }
+
+    .body{
+    
+        .container{
+            
+        }
+    }
+}
