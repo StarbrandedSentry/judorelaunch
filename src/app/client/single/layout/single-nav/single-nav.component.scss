@@ -18,8 +18,9 @@ h1{
 
 .nav-buttons{
     margin-left: auto;
-    display: flex;
+    display: none;
     margin-right: 1em;
+    width: 40vh;
 
 
     a{
@@ -32,7 +33,7 @@ h1{
         font-size: 1em;
         font-weight: 600;
         color: var(--primary);
-        border-radius: 0.8em;
+        border-radius: 0;
         outline: none;
 
         transition-property: background-color, color;
@@ -63,7 +64,7 @@ h1{
 }
 
 .menu {
-    display: none;
+    display: flex;
     cursor: pointer;
     padding: 0.3em;
     background-color: #f7eded69;
