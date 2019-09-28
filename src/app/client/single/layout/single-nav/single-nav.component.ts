@@ -39,6 +39,7 @@ export class SingleNavComponent implements OnInit {
       this.isOpen = true;
     }
   }
+  
   isOpen = false;
 
   constructor() { }

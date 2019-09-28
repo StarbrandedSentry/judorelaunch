@@ -5,6 +5,11 @@
         </i>
     </button>
     <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
+        <button class="close">
+            <i class="material-icons">
+                close
+            </i>
+        </button>
         <a [routerLink]="[ '/order-item' ]" routerLinkActive="active">
             <i class="material-icons">
                 chrome_reader_mode
