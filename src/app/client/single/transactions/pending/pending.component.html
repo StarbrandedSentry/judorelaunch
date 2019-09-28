@@ -1,8 +1,8 @@
 <div class="main">
- <div class="wrapper">
-    <span class="transac id">Order ID</span>
-    <span class="transac supplier">Supplier</span>
-    <span class="transac status">Status</span>
+ <div *ngFor="let item of itemService.recoveredItems;let i = index"  class="wrapper">
+    <span class="transac id">{{item.order_id}}</span>
+    <span class="transac supplier">{{item.quote_id}}</span>
+    <span class="transac status">{{item.status}}</span>
  </div>
 </div>
 
