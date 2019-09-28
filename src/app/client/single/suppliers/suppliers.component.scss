@@ -1,4 +1,25 @@
 .body{
     margin-left: 20vw;
     height: 100vh;
+
+    //display: flex;
+    //justify-content: flex-start;
+    //align-items: center;
+    padding: 2em 0;
+    //flex-wrap: wrap;
 }
+
+.card{
+    background-color: var(--primary);
+    margin-right: 1em;
+
+    padding: 2em;
+    height: fit-content;
+    width: 20vw;
+    color: #ffffff;
+
+    span{
+        color: #ffffff;
+    }
+}
+

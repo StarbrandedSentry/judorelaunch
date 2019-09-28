@@ -1,3 +1,5 @@
 <div class="body">
-    
+    <div class="card" *ngFor="let supplier of suppService.recoveredSuppliers">
+        <span class="title">{{supplier.name | uppercase}}</span>
+    </div>
 </div>
