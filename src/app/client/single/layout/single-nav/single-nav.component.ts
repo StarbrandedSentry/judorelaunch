@@ -40,7 +40,7 @@ export class SingleNavComponent implements OnInit {
     }
   }
 
-  isOpen = false;
+  isOpen = true;
 
   constructor() { }
 
