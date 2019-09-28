@@ -1,2 +1,16 @@
 <app-client-nav></app-client-nav>
 <app-single-nav></app-single-nav>
+
+    <a [routerLink]="[ '/transactions-pending' ]" routerLinkActive="active">
+    <i class="material-icons">
+        view_headline
+    </i>
+    Transactions Pending 
+    </a>
+
+    <a [routerLink]="[ '/transactions-complete' ]" routerLinkActive="active">
+        <i class="material-icons">
+            view_headline
+        </i>
+        Transactions Complete
+        </a>
