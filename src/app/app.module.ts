@@ -27,6 +27,7 @@ import {HttpClient,HttpClientModule} from '@angular/common/http';
 import { SuppliersService } from './client/single/shared/suppliers.service';
 
 import { TooltipModule } from 'ng2-tooltip-directive';
+import { SupplierDialogComponent } from './client/single/dialogs/supplier-dialog/supplier-dialog.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { TooltipModule } from 'ng2-tooltip-directive';
     BiddingComponent,
     FbOrderComponent,
     SignUpComponent,
-    SuppliersComponent
+    SuppliersComponent,
+    SupplierDialogComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
@@ -54,6 +56,7 @@ import { TooltipModule } from 'ng2-tooltip-directive';
     AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
   providers: [SuppliersService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [SupplierDialogComponent]
 })
 export class AppModule { }
