@@ -122,6 +122,14 @@
 //         }
 //     }
 // }
+.logo {
+
+    img{
+        padding: 0.5em;
+        margin-left: 1%;
+        margin-right: auto;
+    }
+}
 
 .sidenav {
     // background-color:  #fcfcfc;;
@@ -246,8 +254,7 @@
         border: none;
         background-color: var(--secondary);
         outline: none;
-        
-
+    
         transition-property: transform;
         transition-timing-function: ease-out;
         transition-duration: 100ms;
