@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ClientComponent } from './client/client.component';
+import { SingleComponent } from './client/single/single.component';
+import { FullBuildComponent } from './client/full-build/full-build.component';
+import { SupplierComponent } from './supplier/supplier.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClientComponent
+    ClientComponent,
+    SingleComponent,
+    FullBuildComponent,
+    SupplierComponent
   ],
   imports: [
     BrowserModule,
