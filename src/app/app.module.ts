@@ -21,6 +21,7 @@ import { CompleteComponent } from './client/single/transactions/complete/complet
 import { BiddingComponent } from './client/full-build/bidding/bidding.component';
 import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
 import { SignUpComponent } from './supplier/sign-up/sign-up.component';
+import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SignUpComponent } from './supplier/sign-up/sign-up.component';
     CompleteComponent,
     BiddingComponent,
     FbOrderComponent,
-    SignUpComponent
+    SignUpComponent,
+    SuppliersComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,

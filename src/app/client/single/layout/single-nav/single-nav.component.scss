@@ -164,6 +164,12 @@
     a{
       //z-index: 3;
       padding: 1em;
+      display: flex;
+      align-items: center;
+
+      i{
+          margin-right: 0.5em;
+      }
     }
 
     .active{

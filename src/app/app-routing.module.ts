@@ -12,6 +12,7 @@ import { BiddingComponent } from './client/full-build/bidding/bidding.component'
 
 import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 import { SupplierComponent } from './supplier/supplier.component';
+import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'single-build', component: SingleComponent, children: [
     { path: '', redirectTo: 'transactions', pathMatch: 'full'},
     { path: 'order-item', component: OrderItemComponent},
+    { path: 'suppliers', component: SuppliersComponent },
     { path: 'transactions', component: TransactionsComponent, children: [
       { path: '', redirectTo: 'transactions-pending', pathMatch: 'full'},
       { path: 'transactions-pending', component: PendingComponent},
