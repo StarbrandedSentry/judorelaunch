@@ -18,9 +18,9 @@
 }
 
 section { 
-    height: 100%;
-    width: 40vw;
-    margin: 5em;
+    height: 100vh;
+    width: auto;
+    //margin: 5em;
     display: flex;    
     align-items: flex-end;    
     transition-duration: 500ms;
@@ -29,11 +29,12 @@ section {
     transition-property: flex-grow;
     color: var(--secondary);  
     cursor: pointer;
+    //flex-grow: 1;
     
 
     &:hover {
         content: 'lorem';
-        flex-grow: 3;
+        flex-grow: 2;
         //width: 41vw;
         //height: 51vh;
         box-shadow: 0 2px 6px 2px #525252;     
