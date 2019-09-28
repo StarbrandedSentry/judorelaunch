@@ -124,64 +124,60 @@
 // }
 
 .sidenav {
-    height: 100vh;
-    width: 20vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 60, 0, 0.97);
-    overflow-x: hidden;
-    padding-top: 20px;
-    overflow-y: hidden;
+    // background-color:  #fcfcfc;;
+    // height: 100vh;
+    // width: 5vw;
+    // display: flex;
+    // flex-direction: column;
+    // box-sizing: border-box;
+    box-shadow: -20px 0px 20px 8px black;
+
+    .nav-buttons{        
+        // height: calc(100vh + (5vh + 2em));
+        background-color:  #fcfcfc;;
+        height: 100vh;
+        width: 5vw;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        // box-shadow: -20px 0px 20px 8px black;
+        top: calc(5vh + 2em);
+        clip-path: inset(0 100% 0 0);
+        overflow-y: hidden;
+
+            a {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                width: 100%;        
+                justify-content: center;
+                color: var(--primary-light);
+                border-bottom: 1px solid var(--secondary-dark);
+                cursor: pointer;
+                text-decoration: none;
+
+                .active{
+                    background-color: var(--primary-light);
+                    color: var(--secondary);
+                }
+                
+                &:hover {
+                    background-color: var(--primary);
+                    border-bottom-color: var(--primary);
+                    color: var(--secondary-light);
+                }
+
+                i {
+                    justify-content: center;
+                    flex-grow:1;
+                    align-self: center;         
+                    font-size: 2.5em;
+                    cursor: pointer;
+                }
+            }
+    }
     
   }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--secondary);
-    display: block;
-    transition: ease-out 0.15s;
-
-    
-  }
-  
-  .sidenav a:hover {
-    color: var(--secondary);
-    background-color: var(--primary-dark);
-    //box-shadow: inset 20vw 0 0 0 var(--primary-dark);
-  }
-
-  .nav-buttons{
-    //position: fixed;
-    height: calc(100vh + (5vh + 2em));
-    width: 20vw;
-    top: calc(5vh + 2em);
-    clip-path: inset(0 100% 0 0);
-    overflow-y: hidden;
-            
-    a{
-      //z-index: 3;
-      padding: 1em;
-      display: flex;
-      align-items: center;
-
-      i{
-          margin-right: 0.5em;
-      }
-    }
-
-    .active{
-        background-color: var(--primary-light);
-
-        &:hover{
-            background-color: var(--primary-light);
-        }
-    }
-}
 
 .menu {
     display: none;
