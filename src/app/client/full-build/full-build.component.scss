@@ -1,5 +1,5 @@
 .container {
-    background-color: var(--secondary);
+    background-color:  #fcfcfc;;
     height: 100vh;
     width: 5vw;
     display: flex;
@@ -18,6 +18,12 @@
         border-bottom: 1px solid var(--secondary-dark);
         cursor: pointer;
         text-decoration: none;
+
+        &:hover {
+            background-color: var(--primary);
+            border-bottom-color: var(--primary);
+            color: var(--secondary-light);
+        }
 
         i {
             justify-content: center;
