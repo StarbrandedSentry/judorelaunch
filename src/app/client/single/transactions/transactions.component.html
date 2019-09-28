@@ -1,16 +1,34 @@
 <app-client-nav></app-client-nav>
-<app-single-nav></app-single-nav>
-
-    <a [routerLink]="[ '/transactions-pending' ]" routerLinkActive="active">
-    <i class="material-icons">
+<!-- <button class="menu">
+    <i class="material-icons" (click)="toggle()">
         view_headline
     </i>
-    Transactions Pending 
+</button> -->
+<div class="topnav">
+    <!-- <span class="close" (click)="close()">
+        <i class="material-icons">
+            close
+        </i>
+    </span> -->
+    
+    <a class="pending" [routerLink]="[ '/transactions-pending' ]" routerLinkActive="active">
+        <i class="material-icons">
+            view_headline
+        </i>
+            Transactions Pending 
     </a>
 
-    <a [routerLink]="[ '/transactions-complete' ]" routerLinkActive="active">
+    <a class="complete" [routerLink]="[ '/transactions-complete' ]" routerLinkActive="active">
         <i class="material-icons">
             view_headline
         </i>
         Transactions Complete
-        </a>
+    </a>
+</div>
+
+
+
+
+
+
+

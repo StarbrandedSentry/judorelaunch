@@ -1,0 +1,31 @@
+.container {
+    background-color: var(--secondary-dark);
+    height:100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        color: var(--primary);
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-weight: bold;
+        // border: 2px solid red;
+    }
+
+    .content {
+        // border: 2px solid yellow;
+        height: 100vh;
+        padding: 2em 0;
+
+        .card {
+            width: 70vw;
+            height: 30vw;
+            border-radius: 10px;
+            background-color: var(--secondary);
+            box-shadow: 0 0 8px 0px rgba(0,0,0,0.7);
+        }
+    }
+}
