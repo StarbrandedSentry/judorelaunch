@@ -1,99 +1,101 @@
-.container {
-    position: fixed;
-    top:0;
-    left:5%;
-    background-color: var(--secondary-dark);
-    height:100vh;
-    width: 100vw;
-    box-sizing: border-box;
-    padding: 1em 2em;
+.body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    .tab-title {
-        color: var(--primary);
-        font-size: 2em;
-        letter-spacing: 2px;
-        font-weight: bold;
-        // border: 2px solid red;
-    }
+    .container {
+        background-color: rgba(188,188,188,0.2);
+        height:100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 1em 2em;
+        display: flex;
+        flex-direction: column;
 
-    .content {
-        // border: 2px solid yellow;
-        height: 100vh;
-        padding: 2em 0;
+        .tab-title {
+            color: var(--primary);
+            font-size: 2em;
+            letter-spacing: 2px;
+            font-weight: bold;
+            // border: 2px solid red;
+        }
 
-        .card {
-            width: 60vw;
-            height: 30vw;
-            border-radius: 0.2em;
-            background-color: #fcfcfc;
-            box-shadow: 0 0 8px 0px rgba(0,0,0,0.7);
-            padding: 2em 3em;
-            display: flex;
-            flex-direction: column;
+        .content {
+            // border: 2px solid yellow;
+            height: 100vh;
+            padding: 2em 0;
 
-            .card-content {
-                // border: 2px solid green;
-                // height: 100%;     
-                padding: 0.4em 0;           
+            .card {
+                width: 60vw;
+                height: 30vw;
+                border-radius: 0.2em;
+                background-color: #fcfcfc;
+                box-shadow: 0 0 8px 0px rgba(0,0,0,0.7);
+                padding: 2em 3em;
                 display: flex;
-                justify-content: space-evenly;
-                align-items: flex-end;
+                flex-direction: column;
 
-                .title {
-                    flex-grow: 1;
-                    // border: 2px solid blue;
-                    font-size: 1.5em;
-                    color: rgba(0,0,0,0.7);
-                }
+                .card-content {
+                    // border: 2px solid green;
+                    // height: 100%;     
+                    padding: 0.4em 0;           
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
 
-                .subtitle {
-                    // border: 2px solid yellow;
-                    color: var(--primary-light);
-                    font-size: 1.2em;
-                    letter-spacing: 2px;
-                    margin-top: 1.2em;
-                    padding-bottom: 0.4em;
-                    border-bottom: 2px solid var(--primary);
-                    width: 100%;
-                    font-weight: bold;
-                }
+                    .title {
+                        flex-grow: 1;
+                        // border: 2px solid blue;
+                        font-size: 1.5em;
+                        color: rgba(0,0,0,0.7);
+                    }
 
-                input[type='text'] {
-                    flex-grow: 3;
-                    border:none;
-                    border-bottom: 1px solid var(--primary);
-                    background-color: transparent;
-                    outline: none;
-                    font-size: 1em;
-                    // border: 2px solid violet;
-                }
-                input[type='number'] {
-                    flex-grow: 2;
-                    border:none;
-                    border-bottom: 1px solid var(--primary);
-                    background-color: transparent;
-                    outline: none;
-                    font-size: 1em;
-                }
+                    .subtitle {
+                        // border: 2px solid yellow;
+                        color: var(--primary-light);
+                        font-size: 1.2em;
+                        letter-spacing: 2px;
+                        margin-top: 1.2em;
+                        padding-bottom: 0.4em;
+                        border-bottom: 2px solid var(--primary);
+                        width: 100%;
+                        font-weight: bold;
+                    }
 
-                button {
-                    flex-grow: 1;
-                    background-color: var(--primary);
-                    color: var(--secondary);
-                    font-size: 1.2em;
-                    border: 0;
-                    margin-top: 1.2em;
-                    padding: 0.7em;
-                    cursor: pointer;
+                    input[type='text'] {
+                        flex-grow: 3;
+                        border:none;
+                        border-bottom: 1px solid var(--primary);
+                        background-color: transparent;
+                        outline: none;
+                        font-size: 1em;
+                        // border: 2px solid violet;
+                    }
+                    input[type='number'] {
+                        flex-grow: 2;
+                        border:none;
+                        border-bottom: 1px solid var(--primary);
+                        background-color: transparent;
+                        outline: none;
+                        font-size: 1em;
+                    }
 
-                    &:hover {
-                        background-color: var(--primary-light);
+                    button {
+                        flex-grow: 1;
+                        background-color: var(--primary);
+                        color: var(--secondary);
+                        font-size: 1.2em;
+                        border: 0;
+                        margin-top: 1.2em;
+                        padding: 0.7em;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: var(--primary-light);
+                        }
                     }
                 }
-            }
 
+            }
         }
     }
 }
