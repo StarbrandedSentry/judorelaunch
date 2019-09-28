@@ -24,6 +24,7 @@ import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
 
 import {HttpClient,HttpClientModule} from '@angular/common/http';
+import { SuppliersService } from './client/single/shared/suppliers.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import {HttpClient,HttpClientModule} from '@angular/common/http';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
-  providers: [],
+  providers: [SuppliersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
