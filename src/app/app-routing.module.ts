@@ -19,9 +19,12 @@ const routes: Routes = [
   { path: 'single-build', component: SingleComponent},
   { path: 'full-build', component: FullBuildComponent},
   { path: 'order-item', component: OrderItemComponent},
-  { path: 'transactions', component: TransactionsComponent},
-  { path: 'transactions-complete', component:CompleteComponent},
-  { path: 'transactions-pending', component:PendingComponent},
+  { path: 'transactions', component: TransactionsComponent, children: [  
+    { path: '', redirectTo: 'transactions-pending', pathMatch: 'full'},
+    { path: 'transactions-complete', component:CompleteComponent},
+    { path: 'transactions-pending', component:PendingComponent}
+  ]},
+  
   { path: 'fb-order', component:FbOrderComponent},
   { path: 'bidding', component:BiddingComponent},
 
