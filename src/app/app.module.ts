@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -13,7 +13,7 @@ import { SingleNavComponent } from './client/single/layout/single-nav/single-nav
 import { ClientNavComponent } from './client/client-nav/client-nav.component';
 import { OrderItemComponent } from './client/single/order-item/order-item.component';
 import { TransactionsComponent } from './client/single/transactions/transactions.component';
-
+ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +27,9 @@ import { TransactionsComponent } from './client/single/transactions/transactions
     TransactionsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,BrowserAnimationsModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

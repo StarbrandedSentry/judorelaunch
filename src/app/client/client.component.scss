@@ -18,14 +18,17 @@
 }
 
 section { 
-    
     height: 50vh;
     width: 40vw;
     margin: 5em;
     display: flex;    
     align-items: flex-end;    
     transition: 0.5s all ease-in-out;
-    
+    color: var(--secondary);
+
+    &:hover {
+        content: 'lorem'
+    }
 
     &.full {
         background: no-repeat center/100% url("../../assets/images/full-build.jpg");
@@ -35,19 +38,35 @@ section {
         background: no-repeat center/100% url("../../assets/images/single.jpg");
     }
 
-    div {
-        color: var(--secondary);
-        font-weight: bold;
-        font-size: 2em;
-        padding: 1em;
-        flex-grow: 1;
+    .details {
+        padding: 0 1em;        
+        cursor: pointer;
 
-    }
+        .title {
+            font-weight: bold;
+            font-size: 2em;
+            flex-grow: 1;
+        }
+    
+        .description {
+            align-self: flex-end;
+
+            &:before {
+                content: 'View more';
+                text-decoration: underline;
+            }
+
+            &:hover::after {
+                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
+                text-decoration: none;
+            }
+        }
+    }   
+
 }
 
 .body{
     display: flex;
-
 }
 
 @media (max-width: 720px){
@@ -59,13 +78,6 @@ section {
     section { 
         margin: 0;
         width: 90vw;
-    
-        div {
-    
-            &:hover {
-                
-            }
-        }
     }
 
     .body{
