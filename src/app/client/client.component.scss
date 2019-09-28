@@ -53,6 +53,7 @@
             }
         }
     }
+}
 
 section { 
     height: 100vh;
@@ -93,6 +94,8 @@ section {
             }
 
             &#full::after{
+                z-index: 99;
+
                 content: 'FULL BUILD  ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
                 text-decoration: none;
             }
@@ -128,10 +131,11 @@ section {
         }
     }
 }
+
+.body{
+    display: flex;
+    width: 100vw;
 }
-
-
-
 
 
 
