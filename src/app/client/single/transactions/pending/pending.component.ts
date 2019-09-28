@@ -14,6 +14,9 @@ export class PendingComponent implements OnInit {
     this.itemService.getItems()
       .subscribe(items => {
         this.itemService.recoveredItems = items;
+        
     });
+    this.itemService.getTransaction('/orders/UZKVetMVEuqPDjIFs8WZ');
     }
+
 }
