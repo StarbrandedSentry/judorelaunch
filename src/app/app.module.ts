@@ -26,6 +26,8 @@ import { SuppliersComponent } from './client/single/suppliers/suppliers.componen
 import {HttpClient,HttpClientModule} from '@angular/common/http';
 import { SuppliersService } from './client/single/shared/suppliers.service';
 
+import { TooltipModule } from 'ng2-tooltip-directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,7 @@ import { SuppliersService } from './client/single/shared/suppliers.service';
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule,HttpClientModule,
+    TooltipModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
