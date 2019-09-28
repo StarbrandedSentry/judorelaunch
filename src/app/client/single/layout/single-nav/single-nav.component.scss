@@ -144,6 +144,8 @@
     color: var(--secondary);
     display: block;
     transition: ease-out 0.15s;
+
+    
   }
   
   .sidenav a:hover {
@@ -162,6 +164,14 @@
     a{
       //z-index: 3;
       padding: 1em;
+    }
+
+    .active{
+        background-color: var(--primary-light);
+
+        &:hover{
+            background-color: var(--primary-light);
+        }
     }
 }
 
