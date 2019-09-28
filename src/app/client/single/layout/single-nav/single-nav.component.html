@@ -1,7 +1,22 @@
 <nav>
-    <a>Transactions</a>
-        <!--dropdown pending, complete-->
-
-    <a>Order</a>
+    <button class="menu">
+        <i class="material-icons" (click)="toggle()">
+                view_headline
+        </i>
+    </button>
+    <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
+        <a [routerLink]="[ '/single-builds' ]" routerLinkActive="active">
+            <i class="material-icons">
+                chrome_reader_mode
+            </i>
+            Transaction
+        </a>
+        <a [routerLink]="[ '/full-builds' ]" routerLinkActive="active">
+            <i class="material-icons">
+                view_headline
+            </i>
+            Hover
+        </a>
+    </div>
    
 </nav>
