@@ -6,33 +6,6 @@
     background-image: url("../../assets/images/bg1.jpg");
     background-size: cover;
 
-    .header
-    {
-        height: 10vh;
-        width: 100vw;    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        order:1;
-        // border: 2px solid red;
-
-        a {
-            text-decoration: none;
-            letter-spacing: 0.2em;
-            color: var(--secondary);
-            padding-bottom: 5px;
-            margin: 10px;
-            font-weight: bold;
-            line-height: 1em;
-
-            &:hover {
-                border-bottom: 1px solid var(--primary);
-                color: var(--primary);
-            }
-        }
-    }
-
-
     .content
     {
         // border: 2px solid red;
@@ -55,12 +28,32 @@
 
             &.subtite
             {
-                font-weight: bold;
+                margin-top: 5em;
                 font-size: 2em;
                 color: var(--secondary);
+                text-shadow: 1px 6px 5px rgba(0,0,0,0.7);
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+
+        i {
+            font-size: 2em;
+            border: 1px solid var(--secondary);
+            border-radius: 50%;
+            color: var(--secondary);
+            cursor: pointer;
+            padding: 10px;
+
+            &:hover {
+                border-color: var(--primary);
+                color: var(--primary);
             }
         }
     }
+
 section { 
     height: 100vh;
     width: auto;
