@@ -1,17 +1,17 @@
 <nav>
-    <button class="menu">
-        <i class="material-icons" (click)="toggle()">
+    <button class="btn-menu" >
+        <i class="material-icons">
                 view_headline
         </i>
     </button>
     <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
-        <a [routerLink]="[ '/order-item' ]" routerLinkActive="active">
+        <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
             <i class="material-icons">
                 chrome_reader_mode
             </i>
             Transactions
         </a>
-        <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
+        <a [routerLink]="[ '/order-item' ]" routerLinkActive="active">
             <i class="material-icons">
                 view_headline
             </i>
