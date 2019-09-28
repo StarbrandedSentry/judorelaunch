@@ -5,6 +5,8 @@ import { SingleComponent } from './client/single/single.component';
 import { FullBuildComponent } from './client/full-build/full-build.component';
 import { OrderItemComponent } from './client/single/order-item/order-item.component';
 import { TransactionsComponent } from './client/single/transactions/transactions.component';
+import { CompleteComponent } from './client/single/transactions/complete/complete.component';
+import { PendingComponent } from './client/single/transactions/pending/pending.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
@@ -12,7 +14,9 @@ const routes: Routes = [
   { path: 'single-build', component: SingleComponent},
   { path: 'full-build', component: FullBuildComponent},
   { path: 'order-item', component: OrderItemComponent},
-  { path: 'transactions', component: TransactionsComponent}
+  { path: 'transactions', component: TransactionsComponent},
+  { path: 'transactions-complete', component:CompleteComponent},
+  { path: 'transactions-pending', component:PendingComponent},
 ];
 
 @NgModule({
