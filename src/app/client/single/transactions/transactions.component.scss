@@ -1,0 +1,39 @@
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--primary);
+    width:50%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    transition: transform .5s;
+  }
+  
+  .topnav a.pending:hover {
+    background-color: yellow;
+    color: var(--primary-dark);
+    transform: scale(1.1);
+  }
+
+  .topnav a.complete:hover {
+    background-color: rgba(10, 238, 10, 0.87);
+    color: var(--primary-dark);
+    transform: scale(1.1);
+  }
+  
+  .topnav a.active {
+    background-color: var(--secondary);
+    color: var(--primary-dark);
+  }
