@@ -122,6 +122,14 @@
 //         }
 //     }
 // }
+.logo {
+
+    img{
+        padding: 0.5em;
+        margin-left: 1%;
+        margin-right: auto;
+    }
+}
 
 .sidenav {
     // background-color:  #fcfcfc;;
@@ -149,7 +157,7 @@
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
-                width: 100%;        
+                width: 100%;  
                 justify-content: center;
                 color: var(--primary-light);
                 border-bottom: 1px solid var(--secondary-dark);
@@ -246,8 +254,7 @@
         border: none;
         background-color: var(--secondary);
         outline: none;
-        
-
+    
         transition-property: transform;
         transition-timing-function: ease-out;
         transition-duration: 100ms;
