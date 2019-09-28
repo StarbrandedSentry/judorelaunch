@@ -3,5 +3,6 @@ export interface Order{
     name: string,
     description: string,
     deadline?: Date,
-    quantity:Number
+    quantity:Number,
+    date_issued?:Date
 }

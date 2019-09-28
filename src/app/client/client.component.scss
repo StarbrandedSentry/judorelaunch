@@ -19,20 +19,20 @@
 
 section { 
     height: 50vh;
-    width: 40vw;
+    width: fit-content;
     margin: 5em;
     display: flex;    
     align-items: flex-end;    
     transition: 0.5s all ease-in-out;
     color: var(--secondary);  
     cursor: pointer;
+    flex-basis: 40vw;
 
     &:hover {
         content: 'lorem';
-        flex-grow: 3;
-
-        -webkit-filter: blur(4px);
-        filter: blur(4px);
+        flex-grow: 5;
+        box-shadow: 0 2px 6px 2px #525252;
+        
         
         .description::after {
             content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
@@ -41,17 +41,17 @@ section {
     }
 
     &.full {
-        background-image: url("../../assets/images/full-build.jpg");
+        background: no-repeat center/100% url("../../assets/images/full-build.jpg");
         background-size: cover;
     }
 
     &.single {
-        background-image: url("../../assets/images/single.jpg");
+        background: no-repeat center/100% url("../../assets/images/single.jpg");
         background-size: cover;
     }
 
     .details {
-        padding: 0 1em;      
+        padding: 0 1em;
 
         .title {
             font-weight: bold;
@@ -61,6 +61,12 @@ section {
     
         .description {
             align-self: flex-end;
+
+            &:before {
+                //content: 'View more';
+                text-decoration: underline;
+            }
+
         }
     }   
 
@@ -70,15 +76,17 @@ section {
     display: flex;
 }
 
-@media (max-width: 720px){
+@media (max-width: 1020px){
     .nav{
         flex-direction: column;
         height: fit-content;
+        margin-bottom: 1em;
     }
     
     section { 
         margin: 0;
         width: 90vw;
+        margin-bottom: 1em;
     }
 
     .body{
