@@ -7,17 +7,21 @@
     //align-items: center;
     padding: 2em 0;
     //flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 100px));
 }
 
 .card{
     background-color: var(--primary);
-    margin-right: 1em;
+    //margin-right: 1em;
 
     padding: 2em;
     height: fit-content;
     width: 20vw;
     color: #ffffff;
 
+    display: flex;
+    flex-direction: column;
     span{
         color: #ffffff;
     }
