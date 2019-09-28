@@ -10,6 +10,9 @@ import { PendingComponent } from './client/single/transactions/pending/pending.c
 import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
 import { BiddingComponent } from './client/full-build/bidding/bidding.component';
 
+import { SignUpComponent } from './supplier/sign-up/sign-up.component';
+import { SupplierComponent } from './supplier/supplier.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
   { path: 'client', component: ClientComponent },
@@ -21,6 +24,11 @@ const routes: Routes = [
   { path: 'transactions-pending', component:PendingComponent},
   { path: 'fb-order', component:FbOrderComponent},
   { path: 'bidding', component:BiddingComponent},
+
+  { path: 'supplier', component: SupplierComponent, children:[
+    { path: '', pathMatch: 'full', redirectTo: 'signup'},
+    { path: 'signup', component: SignUpComponent}
+  ]}
 ];
 
 @NgModule({
