@@ -26,7 +26,6 @@
             height: fit-content;
             background-color: #fcfcfc;
             align-self: center;
-            box-shadow: 0 0 8px 0px rgba(0,0,0,0.7);
 
             .content-title {
                 font-size: 1.5em;
@@ -37,6 +36,21 @@
                 margin: 0.5em 1em;
                 padding-bottom: 0.5em;
                 // border: 2px dashed pink;
+            }
+
+            .content-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                // border: 2px solid gold;
+
+                li {
+                    letter-spacing: 1.5px;
+                    // border: 2px solid brown;
+                    margin: 0.5em 0;
+                    font-size: 1.2em;
+                }
             }
         }
     }
