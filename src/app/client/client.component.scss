@@ -29,7 +29,11 @@ section {
 
     &:hover {
         content: 'lorem';
-        flex-grow: 2;
+        flex-grow: 5;
+        box-shadow: 0 2px 6px 2px #525252;     
+
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
         
         .description::after {
             content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
@@ -56,16 +60,6 @@ section {
     
         .description {
             align-self: flex-end;
-
-            &:before {
-                //content: 'View more';
-                text-decoration: underline;
-            }
-
-            &:hover::before {
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex!';
-                text-decoration: none;
-            }
         }
     }   
 

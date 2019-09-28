@@ -14,6 +14,8 @@ import { ClientNavComponent } from './client/client-nav/client-nav.component';
 import { OrderItemComponent } from './client/single/order-item/order-item.component';
 import { TransactionsComponent } from './client/single/transactions/transactions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
