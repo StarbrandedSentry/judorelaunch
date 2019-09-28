@@ -7,6 +7,8 @@ import { OrderItemComponent } from './client/single/order-item/order-item.compon
 import { TransactionsComponent } from './client/single/transactions/transactions.component';
 import { CompleteComponent } from './client/single/transactions/complete/complete.component';
 import { PendingComponent } from './client/single/transactions/pending/pending.component';
+import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
+import { BiddingComponent } from './client/full-build/bidding/bidding.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'transactions', component: TransactionsComponent},
   { path: 'transactions-complete', component:CompleteComponent},
   { path: 'transactions-pending', component:PendingComponent},
+  { path: 'fb-order', component:FbOrderComponent},
+  { path: 'bidding', component:BiddingComponent},
 ];
 
 @NgModule({
