@@ -19,6 +19,12 @@
         cursor: pointer;
         text-decoration: none;
 
+        &:hover {
+            background-color: var(--primary);
+            border-bottom-color: var(--primary);
+            color: var(--secondary-light);
+        }
+
         i {
             justify-content: center;
             align-self: center;         

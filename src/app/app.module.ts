@@ -20,6 +20,7 @@ import { PendingComponent } from './client/single/transactions/pending/pending.c
 import { CompleteComponent } from './client/single/transactions/complete/complete.component';
 import { BiddingComponent } from './client/full-build/bidding/bidding.component';
 import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
+import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FbOrderComponent } from './client/full-build/fb-order/fb-order.componen
     PendingComponent,
     CompleteComponent,
     BiddingComponent,
-    FbOrderComponent
+    FbOrderComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
