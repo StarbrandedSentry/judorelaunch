@@ -12,4 +12,8 @@ export class ClientComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToView($element){
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
 }

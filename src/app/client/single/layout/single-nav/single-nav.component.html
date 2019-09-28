@@ -3,16 +3,18 @@
 <div class="sidenav">
     <button class="menu">
         <i class="material-icons" (click)="toggle()">
-                view_headline
+            view_headline
         </i>
     </button>
+
     <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
         <span class="close" (click)="close()">
             <i class="material-icons">
                 close
             </i>
         </span> 
-        <a [routerLink]="[ '/transactions' ]" routerLinkActive="active">
+
+        <a class="a" [routerLink]="[ '/transactions' ]" routerLinkActive="active">
             <i class="material-icons">
                 chrome_reader_mode
             </i>

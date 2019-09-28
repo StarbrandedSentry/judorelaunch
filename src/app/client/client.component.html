@@ -1,11 +1,14 @@
 <div class="container">
     <div class="content">
         <p class="title">Welcome, Client</p>
-        <p class="subtite">Get Started</p>            
-        <a href="#anchor"><i class="material-icons">arrow_downward</i></a>    
+        <p class="subtite" (click)="scrollToView(target)">Get Started</p>            
+        <a><i class="material-icons" (click)="scrollToView(target)">arrow_downward</i></a>    
     </div>
 </div>
-<div class="body" id="anchor">
+
+
+    
+<div class="body" #target>
     <section class="full" [routerLink]="[ '/full-build' ]" routerLinkActive="active">
         <div class="details">
             <div class="title">
