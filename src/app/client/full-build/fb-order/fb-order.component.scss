@@ -1,5 +1,5 @@
 .container {
-    background-color: var(--secondary-dark);
+    background-color: #ebebeb;
     height:100vh;
     width: 100vw;
     box-sizing: border-box;
@@ -23,8 +23,8 @@
         .card {
             width: 60vw;
             height: 30vw;
-            border-radius: 10px;
-            background-color: var(--secondary);
+            border-radius: 0.2em;
+            background-color: #fcfcfc;
             box-shadow: 0 0 8px 0px rgba(0,0,0,0.7);
             padding: 2em 3em;
             display: flex;
@@ -63,6 +63,7 @@
                     border-bottom: 1px solid var(--primary);
                     background-color: transparent;
                     outline: none;
+                    font-size: 1em;
                     // border: 2px solid violet;
                 }
                 input[type='number'] {
@@ -71,6 +72,7 @@
                     border-bottom: 1px solid var(--primary);
                     background-color: transparent;
                     outline: none;
+                    font-size: 1em;
                 }
 
                 button {
