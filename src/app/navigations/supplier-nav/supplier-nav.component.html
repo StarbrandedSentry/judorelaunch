@@ -1,0 +1,34 @@
+<nav>
+    <button class="menu">
+        <i class="material-icons" (click)="toggle()">
+                view_headline
+        </i>
+    </button>
+    <h1>Project X</h1>
+    <div class="nav-buttons" [@openClose]="isOpen ? 'open' : 'closed'">
+        <a [routerLink]="[ '/items' ]" routerLinkActive="active">
+            <i class="material-icons">
+                chrome_reader_mode
+            </i>
+            Dashboard
+        </a>
+        <a [routerLink]="[ '/burger' ]" routerLinkActive="active">
+            <i class="material-icons">
+                view_headline
+            </i>
+            Create Order
+        </a>
+        <a [routerLink]="[ '/http' ]" routerLinkActive="active">
+            <i class="material-icons">
+                new_releases
+            </i>
+            Suppliers
+        </a>
+        <a [routerLink]="[ '/http' ]" routerLinkActive="active">
+            <i class="material-icons">
+                new_releases
+            </i>
+            Reports
+        </a>
+    </div>
+</nav>
