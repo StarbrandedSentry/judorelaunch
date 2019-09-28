@@ -9,10 +9,12 @@ const routes: Routes = [
   { path: 'client', component: ClientComponent },
   { path: 'single', component: SingleComponent },
   { path: 'full-build', component: FullBuildComponent }
+  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  
 })
 export class AppRoutingModule { }
