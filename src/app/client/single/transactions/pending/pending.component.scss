@@ -16,7 +16,8 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 200px 1fr 1fr;
     background-color: #fff;
     color: #444;
 }
@@ -25,5 +26,5 @@
     background-color: #444;
     color: #fff;
     padding: 20px;
-    font-size: 150%;
+    font-size: 70%;
 }
