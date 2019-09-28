@@ -1,38 +1,34 @@
-<div class="nav">
-    <p class="big">Welcome, Client</p>
-    <p>Get Started</p>
+<div class="container">
+    <div class="header">
+        <a href="#">Single Build</a>
+        <a href="#">Full Build</a>
+    </div>
+    <div class="content">
+        <p class="title">Welcome, Client</p>
+        <p class="subtite">Get Started</p>
+    </div>
 </div>
 
-<div class="body">
-    <section class="full" [routerLink]="[ '/full-build' ]" routerLinkActive="active">
-        <div class="details">
-            <div class="title">
-                FULL BUILD     
-            </div>
-            <p class="description">
-                <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex! -->
-            </p>
-        </div>
-    </section>
+
     
     <div class="body">
         <section class="full" [routerLink]="[ '/full-build' ]" routerLinkActive="active">
             <div class="details">
                 <div class="title">
                     FULL BUILD     
-                </div>fwa
-                <p class="description">
+                </div>
+                <p class="description" id="full">
                     <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit repudiandae reiciendis quae consequuntur itaque cupiditate obcaecati accusamus esse facere sunt dolor fuga perferendis, ea laborum vitae animi deleniti ex! -->
                 </p>
             </div>
         </section>
         
         <section class="single" [routerLink]="[ '/single-build' ]" routerLinkActive="active">
-            <div class="details">
-                <div class="title">
+            <div class="details" id="single">
+                <div class="title" >
                     SINGLE BUILD
                 </div>
-                <p class="description">
+                <p class="description" id="single">
                    <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error mollitia voluptates cum porro eveniet quae animi odit iure quas perspiciatis, fugiat ducimus, libero ea praesentium officia sunt totam amet nam. -->
                 </p>
             </div>        
