@@ -3,7 +3,6 @@ nav{
     height: 5vh;
     padding: 1em;
     width: 40vw;
-    
 
     display: flex;
     align-items: center;
@@ -73,6 +72,7 @@ h1{
 @media screen and (max-width: 10000px){
     nav{
         justify-content: flex-start;
+        box-shadow: 0 0 0 -6px black;
     }
 
     .close i {
@@ -105,12 +105,21 @@ h1{
 
     .menu {
         display: flex;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
         transition-property: transform;
         transition-timing-function: ease-out;
         transition-duration: 100ms;
 
         &:hover{
             transform: translateX(0.25em);
+        }
+
+        i{
+            cursor: pointer;
+            font-size: 3em;
         }
     }
 }
