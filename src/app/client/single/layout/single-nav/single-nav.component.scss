@@ -130,7 +130,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--primary);
+    background-color: rgba(255, 60, 0, 0.97);
     overflow-x: hidden;
     padding-top: 20px;
     
@@ -148,7 +148,7 @@
   
   .sidenav a:hover {
     color: var(--secondary);
-    box-shadow: inset 100vw 0 0 0 var(--primary-dark);
+    box-shadow: inset 20vw 0 0 0 var(--primary-dark);
   }
 
   .nav-buttons{
@@ -177,7 +177,16 @@
 @media screen and (max-width: 620px){
     .sidenav {
         background-color: transparent;
-    }
+     a {
+    
+
+    transition: ease-out 0.15s;
+     }
+}
+
+.sidenav a:hover {
+  box-shadow: inset 40vw 0 0 0 var(--primary-dark);
+}
 
     .nav-buttons{
         position: fixed;
