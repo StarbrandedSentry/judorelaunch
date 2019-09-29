@@ -8,6 +8,8 @@
     --secondary-dark: #bcbcbc;
 }
 
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -67,5 +69,14 @@ button{
         &:active{
             background-color: var(--primary-dark);
         }
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.supplier-dialog{
+    .mat-dialog-container{
+        background-color: var(--primary-light);
+        color: #ffffff;
     }
 }

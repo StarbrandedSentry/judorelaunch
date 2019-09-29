@@ -22,11 +22,15 @@ import { BiddingComponent } from './client/full-build/bidding/bidding.component'
 import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
 import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
+import { MatDialogModule } from '@angular/material';
 
 import {HttpClient,HttpClientModule} from '@angular/common/http';
 import { SuppliersService } from './client/single/shared/suppliers.service';
 
 import { TooltipModule } from 'ng2-tooltip-directive';
+import { FeedbackComponent } from './client/feedback/feedback.component';
+import { RatingModule } from 'ng-starrating';
+import { SupplierDialogComponent } from './client/single/dialogs/supplier-dialog/supplier-dialog.component';
 
 @NgModule({
   declarations: [
@@ -44,16 +48,20 @@ import { TooltipModule } from 'ng2-tooltip-directive';
     BiddingComponent,
     FbOrderComponent,
     SignUpComponent,
-    SuppliersComponent
+    SuppliersComponent,
+    FeedbackComponent,
+    SupplierDialogComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule,HttpClientModule,
-    TooltipModule,
+    TooltipModule, RatingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
+    AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule,
+    MatDialogModule
   ],
   providers: [SuppliersService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [SupplierDialogComponent]
 })
 export class AppModule { }
