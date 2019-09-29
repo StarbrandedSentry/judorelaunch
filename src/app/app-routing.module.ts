@@ -13,10 +13,11 @@ import { BiddingComponent } from './client/full-build/bidding/bidding.component'
 import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
-
+import {MailComponent} from './mail/mail.component';
 const routes: Routes = [
   { path: '', redirectTo: 'client', pathMatch: 'full'},
   { path: 'client', component: ClientComponent},
+  { path: 'mail', component: MailComponent},
   { path: 'single-build', component: SingleComponent, children: [
     { path: '', redirectTo: 'transactions', pathMatch: 'full'},
     { path: 'order-item', component: OrderItemComponent},

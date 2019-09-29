@@ -31,6 +31,7 @@ import { TooltipModule } from 'ng2-tooltip-directive';
 import { FeedbackComponent } from './client/feedback/feedback.component';
 import { RatingModule } from 'ng-starrating';
 import { SupplierDialogComponent } from './client/single/dialogs/supplier-dialog/supplier-dialog.component';
+import { MailComponent } from './mail/mail.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { SupplierDialogComponent } from './client/single/dialogs/supplier-dialog
     SignUpComponent,
     SuppliersComponent,
     FeedbackComponent,
-    SupplierDialogComponent
+    SupplierDialogComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
