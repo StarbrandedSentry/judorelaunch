@@ -1,8 +1,8 @@
 export interface Order{
     id?: string,
     name: string,
-    description: string,
+    description?: string,
     deadline?: Date,
-    quantity:Number,
+    quantity?:Number,
     date_issued?:Date
 }
