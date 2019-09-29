@@ -28,6 +28,7 @@
     "firebase": "^7.0.0",
     "firebase-admin": "^8.6.0",
     "firebase-functions": "^3.2.0",
+    "ng-starrating": "^1.0.7",
     "ng2-tooltip-directive": "^2.8.17",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.3",
