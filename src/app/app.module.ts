@@ -22,6 +22,7 @@ import { BiddingComponent } from './client/full-build/bidding/bidding.component'
 import { FbOrderComponent } from './client/full-build/fb-order/fb-order.component';
 import { SignUpComponent } from './supplier/sign-up/sign-up.component';
 import { SuppliersComponent } from './client/single/suppliers/suppliers.component';
+import { MatDialogModule } from '@angular/material';
 
 import {HttpClient,HttpClientModule} from '@angular/common/http';
 import { SuppliersService } from './client/single/shared/suppliers.service';
@@ -53,7 +54,8 @@ import { SupplierDialogComponent } from './client/single/dialogs/supplier-dialog
     AppRoutingModule,HttpClientModule,
     TooltipModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
+    AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule,
+    MatDialogModule
   ],
   providers: [SuppliersService],
   bootstrap: [AppComponent],
