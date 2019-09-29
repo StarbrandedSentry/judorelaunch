@@ -1,0 +1,16 @@
+[debug] [2019-09-29T03:14:46.863Z] ----------------------------------------------------------------------
+[debug] [2019-09-29T03:14:46.869Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\rtlee\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2019-09-29T03:14:46.869Z] CLI Version:   7.4.0
+[debug] [2019-09-29T03:14:46.869Z] Platform:      win32
+[debug] [2019-09-29T03:14:46.869Z] Node Version:  v10.16.3
+[debug] [2019-09-29T03:14:46.871Z] Time:          Sun Sep 29 2019 11:14:46 GMT+0800 (Philippine Standard Time)
+[debug] [2019-09-29T03:14:46.871Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-29T03:14:46.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-29T03:14:46.890Z] > authorizing via signed-in user
+[debug] [2019-09-29T03:14:46.891Z] [iam] checking project judorelaunch420 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-09-29T03:14:46.895Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/judorelaunch420:testIamPermissions  
+
+[debug] [2019-09-29T03:14:50.866Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-29T03:14:50.871Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/judorelaunch420  
+ 

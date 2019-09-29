@@ -17,7 +17,7 @@ export class SupplierDialogComponent implements OnInit {
   suppliers: Supplier[];
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, 
-  private dialogRef: MatDialogRef<SupplierDialogComponent>, private suppService: SuppliersService) { 
+  private dialogRef: MatDialogRef<SupplierDialogComponent>, public suppService: SuppliersService) { 
     this.order = data.order;
     console.log(this.order);
   }
@@ -58,5 +58,9 @@ export class SupplierDialogComponent implements OnInit {
     
   }
 
+  readonly ROOT_URL = '';
+  sendHttp(){
+    
+  }
 
 }
