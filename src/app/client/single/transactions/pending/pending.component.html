@@ -1,8 +1,13 @@
 <div class="main">
- <div *ngFor="let item of itemService.recoveredItems;let i = index"  class="wrapper">
-    <span class="transac id">{{item.order_id}}</span>
-    <span class="transac supplier">{{item.quote_id}}</span>
-    <span class="transac status">{{item.status}}</span>
+   <div class="form-col">
+      <div><span>Order ID</span></div>
+      <div>Quote ID</div>
+      <div>Status</div>
+   </div>
+ <div *ngFor="let item of itemService.recoveredItems;let i = index"  class="form-row">
+    <div><span class="transac">{{item.order_id}}</span></div>
+    <div><span class="transac">{{item.quote_id}}</span></div>
+    <div><span class="transac">{{item.status}}</span></div>
  </div>
 </div>
 
