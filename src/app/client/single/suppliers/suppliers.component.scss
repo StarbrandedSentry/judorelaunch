@@ -1,4 +1,5 @@
 .body{
+
     margin-left: 20vw;
     height: 100vh;
 
@@ -10,14 +11,24 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(1fr, 100px));
 }
+.container{
+    top:10vh;
+overflow-y: scroll;
+position: fixed;
+right: 0;
+height: 70vh;
+
+}
+
 
 .card{
+  border:15px #ffffff;
     background-color: var(--primary);
     //margin-right: 1em;
 
     padding: 2em;
     height: fit-content;
-    width: 20vw;
+    width: 80vw;
     color: #ffffff;
 
     display: flex;
