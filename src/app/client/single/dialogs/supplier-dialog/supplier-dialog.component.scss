@@ -1,0 +1,41 @@
+.supplier{
+    background-color: var(--secondary-dark);
+    height: fit-content;
+    margin-bottom: 0.5em;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+
+span{
+    
+    &.title{
+        font-size: 1.5em;
+        color: var(--primary-light);
+    }
+
+    &.description{
+        color: #000000;
+    }
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.buttons{
+    bottom: 0;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+button{
+    width: fit-content;
+}

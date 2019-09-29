@@ -70,6 +70,23 @@ button{
             background-color: var(--primary-dark);
         }
     }
+
+    &.bold{
+        background-color: transparent;
+        color: var(--primary);
+
+        transition-property: opacity;
+        transition-timing-function: ease-in;
+        transition-duration: 125ms;
+
+        &:hover{
+            opacity: 0.75;
+        }
+
+        &:active{
+            color: var(--primary-dark);
+        }
+    }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

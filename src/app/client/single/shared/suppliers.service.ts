@@ -27,4 +27,8 @@ export class SuppliersService {
   getSuppliers(){
     return this.suppliers;
   }
+
+  getSelectedSuppliers(){
+    
+  }
 }

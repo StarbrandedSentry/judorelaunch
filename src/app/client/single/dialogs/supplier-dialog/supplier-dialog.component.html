@@ -1,5 +1,14 @@
-<div class="supplier" *ngFor="let supplier of suppService.recoveredSuppliers">
-    <div *ngIf="supplier.valid">
-        {{supplier.name}}
+<div class="body">
+    <div *ngFor="let supplier of suppService.recoveredSuppliers">
+        <div *ngIf="supplier.valid" class="supplier">
+            <span class="title">{{supplier.name}}</span>
+            <span class="description">{{supplier.email}}</span>
+        </div>
+        
+    </div>
+
+    <div class="buttons">
+        <button class="solid">Send Emails</button>
+        <button class="bold" (click)="closeDialog()">Cancel</button>
     </div>
 </div>

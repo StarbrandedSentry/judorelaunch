@@ -12,7 +12,7 @@ export class OrderItemComponent implements OnInit {
   name :string;
   description:string;
   order: Order = {
-    name: '',
+    name: 'light-bulb',
     description: '',
     quantity:0
   }
@@ -23,7 +23,7 @@ export class OrderItemComponent implements OnInit {
 
   placeOrder(){
     this.dialog.open(SupplierDialogComponent, {
-      height: '400px',
+      height: '500px',
       width:  '600px',
       panelClass: 'supplier-dialog',
       data:{

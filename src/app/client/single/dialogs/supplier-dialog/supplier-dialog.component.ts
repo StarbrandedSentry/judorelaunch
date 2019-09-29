@@ -4,6 +4,7 @@ import { SuppliersService } from '../../shared/suppliers.service';
 import { Order } from '../../../../models/order.model';
 import { Supplier } from '../../../../models/supplier.model';
 import { async } from 'rxjs/internal/scheduler/async';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-supplier-dialog',
@@ -33,13 +34,13 @@ export class SupplierDialogComponent implements OnInit {
           console.log(this.order);
           if(item == this.order.name){
             supplier.valid = true;
-            
+            console.log(supplier);
           }
         });
         
       });
       this.suppService.recoveredSuppliers = supplier;
-      console.log(this.suppService.recoveredSuppliers);
+      
     });
 
     
@@ -47,7 +48,8 @@ export class SupplierDialogComponent implements OnInit {
     console.log(this.order);
   }
 
-  clickThis(){
+  closeDialog(){
+    this.dialogRef.close();
   }
 
   ngOnDestroy(): void {
@@ -55,4 +57,6 @@ export class SupplierDialogComponent implements OnInit {
     //Add 'implements OnDestroy' to the class.
     
   }
+
+
 }
