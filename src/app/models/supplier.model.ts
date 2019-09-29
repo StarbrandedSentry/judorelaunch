@@ -5,5 +5,6 @@ export interface Supplier{
     contact_number?: string,
     rating?: number,
     address?: string,
-    items?: string[]
+    items?: string[],
+    valid?: boolean
 }
