@@ -27,6 +27,8 @@ import {HttpClient,HttpClientModule} from '@angular/common/http';
 import { SuppliersService } from './client/single/shared/suppliers.service';
 
 import { TooltipModule } from 'ng2-tooltip-directive';
+import { FeedbackComponent } from './client/feedback/feedback.component';
+import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -44,12 +46,13 @@ import { TooltipModule } from 'ng2-tooltip-directive';
     BiddingComponent,
     FbOrderComponent,
     SignUpComponent,
-    SuppliersComponent
+    SuppliersComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule,HttpClientModule,
-    TooltipModule,
+    TooltipModule, RatingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }), FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule
   ],
